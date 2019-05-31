@@ -12,4 +12,7 @@ data:
                         location /api/ {
                                 proxy_pass http://backend:8085;
                                 }
+                        location /jenkins/ {
+                                proxy_pass http://jenkins:8080;
+                                }
                 }
